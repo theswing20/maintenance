@@ -1,32 +1,28 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+  <div class="wrapper">
     <router-view/>
   </div>
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
 
-#nav {
-  padding: 30px;
-}
+   html, body {
+     padding: 0;
+     margin: 0;
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+     font-family: 'Roboto Condensed', sans-serif;
+   }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  }
+
+  .wrapper {
+    width: 100vw;
+    height: 100vh;
+
+    background: url('./assets/background-image.svg');
+  }
+
 </style>
